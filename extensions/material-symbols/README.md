@@ -91,8 +91,8 @@ npm run lint     # ray lint
 ## ライセンス / クレジット
 
 - 拡張本体: MIT（`LICENSE`）
-- **Material Symbols** フォント / アイコン: Apache License 2.0（`assets/FONT-LICENSE` / [google/material-design-icons](https://github.com/google/material-design-icons)）
-- **Lucide** アイコン（Feather 由来分は MIT）: ISC License（`assets/LUCIDE-LICENSE` / [lucide-icons/lucide](https://github.com/lucide-icons/lucide)）
-- **resvg**（`assets/resvg.wasm`, PNG 描画に使用）: MPL-2.0（`assets/RESVG-LICENSE` / [yisibl/resvg-js](https://github.com/yisibl/resvg-js)）
+- **Material Symbols** フォント / アイコン: Apache License 2.0（`licenses/FONT-LICENSE` / [google/material-design-icons](https://github.com/google/material-design-icons)）
+- **Lucide** アイコン（Feather 由来分は MIT）: ISC License（`licenses/LUCIDE-LICENSE` / [lucide-icons/lucide](https://github.com/lucide-icons/lucide)）
+- **resvg**（`assets/resvg.wasm`, PNG 描画に使用）: MPL-2.0（`licenses/RESVG-LICENSE` / [yisibl/resvg-js](https://github.com/yisibl/resvg-js)）
 
 本拡張は Google / Lucide とは無関係の非公式ツールです（"Material Symbols" 等は各権利者の商標）。

@@ -25,8 +25,8 @@ SOFTWARE.
 This extension bundles third-party assets under their own licenses:
 
 - Material Symbols (variable fonts & icons) — Apache License 2.0
-  See assets/FONT-LICENSE. https://github.com/google/material-design-icons
+  See licenses/FONT-LICENSE. https://github.com/google/material-design-icons
 - Lucide (icons; Feather-derived icons under MIT) — ISC License
-  See assets/LUCIDE-LICENSE. https://github.com/lucide-icons/lucide
+  See licenses/LUCIDE-LICENSE. https://github.com/lucide-icons/lucide
 - resvg (assets/resvg.wasm, via @resvg/resvg-js) — Mozilla Public License 2.0
-  See assets/RESVG-LICENSE. https://github.com/yisibl/resvg-js
+  See licenses/RESVG-LICENSE. https://github.com/yisibl/resvg-js
