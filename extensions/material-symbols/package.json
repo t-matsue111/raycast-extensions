@@ -1,0 +1,173 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "material-symbols",
+  "title": "Material Symbols",
+  "description": "Search Material Symbols and Lucide icons and copy or paste them as SVG or image",
+  "icon": "command-icon.png",
+  "author": "takeshi_matsue",
+  "license": "MIT",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Design Tools",
+    "Developer Tools"
+  ],
+  "commands": [
+    {
+      "name": "search-symbols",
+      "title": "Search Icons",
+      "subtitle": "Material Symbols & Lucide",
+      "description": "Search icons and copy or paste them as SVG or image",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "primaryAction",
+      "type": "dropdown",
+      "title": "Primary Action",
+      "description": "Action triggered by the Enter key",
+      "required": false,
+      "default": "paste-png",
+      "data": [
+        { "title": "Paste as Image (PNG)", "value": "paste-png" },
+        { "title": "Copy Image (PNG)", "value": "copy-png" },
+        { "title": "Copy SVG Code", "value": "copy-svg" },
+        { "title": "Paste SVG", "value": "paste-svg" }
+      ]
+    },
+    {
+      "name": "style",
+      "type": "dropdown",
+      "title": "Default Style",
+      "description": "Default style on launch (switchable from the search bar dropdown)",
+      "required": false,
+      "default": "outlined",
+      "data": [
+        {
+          "title": "Outlined",
+          "value": "outlined"
+        },
+        {
+          "title": "Rounded",
+          "value": "rounded"
+        },
+        {
+          "title": "Sharp",
+          "value": "sharp"
+        }
+      ]
+    },
+    {
+      "name": "fill",
+      "type": "checkbox",
+      "title": "Fill",
+      "label": "Use the filled variant (FILL 1) by default",
+      "description": "Toggle at runtime with ⌘F (Material Symbols only)",
+      "required": false,
+      "default": false
+    },
+    {
+      "name": "weight",
+      "type": "dropdown",
+      "title": "Weight",
+      "description": "Default stroke weight (adjust at runtime with ⌘] / ⌘[)",
+      "required": false,
+      "default": "400",
+      "data": [
+        {
+          "title": "100",
+          "value": "100"
+        },
+        {
+          "title": "200",
+          "value": "200"
+        },
+        {
+          "title": "300",
+          "value": "300"
+        },
+        {
+          "title": "400",
+          "value": "400"
+        },
+        {
+          "title": "500",
+          "value": "500"
+        },
+        {
+          "title": "600",
+          "value": "600"
+        },
+        {
+          "title": "700",
+          "value": "700"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "type": "textfield",
+      "title": "SVG Color",
+      "description": "Color for the copied/pasted SVG (e.g. #0081E8, currentColor)",
+      "required": false,
+      "default": "currentColor"
+    },
+    {
+      "name": "size",
+      "type": "textfield",
+      "title": "SVG Size (px)",
+      "description": "width / height of the copied/pasted SVG",
+      "required": false,
+      "default": "24"
+    },
+    {
+      "name": "columns",
+      "type": "dropdown",
+      "title": "Grid Columns",
+      "description": "Number of columns in the grid (3–8)",
+      "required": false,
+      "default": "8",
+      "data": [
+        {
+          "title": "5",
+          "value": "5"
+        },
+        {
+          "title": "6",
+          "value": "6"
+        },
+        {
+          "title": "7",
+          "value": "7"
+        },
+        {
+          "title": "8",
+          "value": "8"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.9",
+    "@raycast/utils": "^1.17.0",
+    "@resvg/resvg-wasm": "^2.6.2",
+    "fontkit": "^2.0.4"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/fontkit": "^2.0.7",
+    "@types/node": "^22.19.17",
+    "@types/react": "^19.0.10",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix"
+  }
+}

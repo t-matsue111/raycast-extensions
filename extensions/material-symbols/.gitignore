@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.log
+raycast-env.d.ts
+.raycast
+
+# 再生成用の生データ（実行時不要・配布物に含めない）
+data-source/
